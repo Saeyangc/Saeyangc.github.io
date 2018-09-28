@@ -1,0 +1,17 @@
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.bio {
+  background-color: #2DAD77
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.spacing {
+  margin: 10%;
+}
