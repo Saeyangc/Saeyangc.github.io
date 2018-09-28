@@ -5,7 +5,7 @@
 }
 
 .bio {
-  background-color: #2DAD77
+  background-color: #637081
 }
 
 .avatar{
@@ -14,4 +14,11 @@
 
 .spacing {
   margin: 10%;
+}
+
+.portfolio{
+  background-color: #7C98B3
+}
+#card{
+  margin: 25px;
 }
