@@ -30,17 +30,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          </li>         
         </ul>
         <i class="nav-item topnav-right">
-          <a href="./shared/CharlesSaeyang_Resume.pdf"><button class="btn"><i class="fa fa-download"></i> Download
-              Resume </button></a>
+          <a href="./shared/CharlesSaeyang_Resume.pdf"><button class="btn"><i class="fa fa-download"></i> Download Resume </button></a>
         </i>
-
-
+        
       </div>
     </div>
   </nav>
@@ -58,6 +53,9 @@
         <a href="https://github.com/Saeyangc">
           <li class="list-inline-item fa fa-github" style="font-size: 42px; color:black"></li>
         </a>
+       <a href="#">
+          <li class="list-inline-item fa fa-envelope" onclick="email()" style="font-size: 42px; color:black"></li>
+        </a> 
       </ul>
       <h1 class="text-uppercase mb-0 text-center">Charles Saeyang</h1>
       <h2 class="font-weight-light mb-0 text-center">Software - Web - Games</h2>
@@ -85,16 +83,14 @@
 
         <div class="col-sm-6">
           <p>
-          <h1 class="text-center">Quick Look</h1>
-         <ul>
-           <li>B.S Computer Science - Central Washington University</li>
-           <li>Java, C/C++, C#, Javascipt, Python, HTML/CSS, SQL</li>
-           <li>NodeJS, React, ASP.net CORE</li> 
-           <li>Visual Studio, NetBeans, Eclipse, Git </li> 
-
-
-         </ul>
-        </p> 
+            <h1 class="text-center">Quick Look</h1>
+            <ul>
+              <li>B.S Computer Science - Central Washington University</li>
+              <li>Java, C/C++, C#, Javascipt, Python, HTML/CSS, SQL</li>
+              <li>NodeJS, React, ASP.net CORE</li>
+              <li>Visual Studio, NetBeans, Eclipse, Git </li>
+            </ul>
+          </p>
         </div>
       </div>
       <br />
@@ -113,7 +109,7 @@
         <div class="card col-sm" id="card" style="width: 18rem;">
           <img class="card-img-top" src="./img/bptd.png" width="250" height="200">
           <div class="card-body">
-            <h5 class="card-title">MooseBot</h5>
+            <h5 class="card-title">Right on Time</h5>
             <p class="card-text">Business and project management web application done for Breedt Production Tooling &
               Design.
               The application is used to keep track projects, material, finances, and reports to stream line work flow
@@ -174,14 +170,14 @@
       <!--End container-->
     </div>
   </section>
-
-  <section class="contact" id="contact">
-
-
-  </section>
-
-
-
+ 
+ <script>
+   function email(){
+     var email = "Saecharles@gmail.com"
+     document.execCommand("copy");
+     alert("Copied Email Addres: " + email);
+   }
+ </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
