@@ -32,8 +32,9 @@
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>         
         </ul>
+        <span style="visibility: hidden" id="em">saecharles@gmail.com</span>
         <i class="nav-item topnav-right">
-          <a href="./shared/CharlesSaeyang_Resume.pdf"><button class="btn"><i class="fa fa-download"></i> Download Resume </button></a>
+          <a href="./shared/CharlesSaeyang_Resume.pdf"><button class="btn"><i class="fa fa-download"></i> Resume & Contact </button></a>
         </i>
         
       </div>
@@ -54,10 +55,11 @@
           <li class="list-inline-item fa fa-github" style="font-size: 42px; color:black"></li>
         </a>
        <a href="#">
-          <li class="list-inline-item fa fa-envelope" onclick="email()" style="font-size: 42px; color:black"></li>
-        </a> 
+          <li class="list-inline-item fa fa-envelope" onclick="emailCopy()" style="font-size: 42px; color:black"></li>
+        </a>
+         
       </ul>
-      <h1 class="text-uppercase mb-0 text-center">Charles Saeyang</h1>
+      <h1 class="text-uppercase mb-0 text-center">Charles Saeyang</h1>      
       <h2 class="font-weight-light mb-0 text-center">Software - Web - Games</h2>
       <br />
       <div class="spacing"></div>
@@ -137,8 +139,7 @@
           <img class="card-img-top" src="./img/CircleDefense.png" width="250" height="200">
           <div class="card-body">
             <h5 class="card-title">Circle Defense</h5>
-            <p class="card-text">Remake of the classic game "Breakout" Using the Unity3D engine instead of C++ and
-              OpenGL.</p>
+            <p class="card-text">Game created using Unity3D where user needs to shoot incoming objects in order to survive.</p>
             <a href="https://github.com/Saeyangc/Shape" class="btn btn-primary">Code</a>
             <a href=" https://play.google.com/store/apps/details?id=com.MooseSpanker.test" class="btn btn-primary">Google
               Play</a>
@@ -172,10 +173,11 @@
   </section>
  
  <script>
-   function email(){
-     var email = "Saecharles@gmail.com"
+   function emailCopy(){
+    var ele = document.getElementById('em');
+    var email = ele.innerHTML;             
      document.execCommand("copy");
-     alert("Copied Email Addres: " + email);
+     alert("Please send all inquiries to saecharles@gmail.com");
    }
  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
